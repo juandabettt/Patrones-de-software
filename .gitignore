@@ -1,0 +1,10 @@
+# Compilados de Java
+*.class
+
+# Carpetas de VS Code y herramientas
+.vscode/
+bin/
+
+# Archivos temporales de sistema
+.DS_Store
+Thumbs.db
