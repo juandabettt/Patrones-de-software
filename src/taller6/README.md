@@ -64,37 +64,3 @@ Notification (abstracción)          NotificationChannel (implementación)
 | `NotificationCardPanel.java` | Tarjeta flotante con estado, tiempo y botones. |
 | `NotificationUI.java` | Ventana principal: formulario y feed de tarjetas. |
 | `NotificationDemoMain.java` | Demo por consola (sin interfaz gráfica). |
-
----
-
-## Requisitos
-
-- JDK 8 o superior.
-
----
-
-## Compilar y ejecutar
-
-Desde la raíz del proyecto:
-
-```bash
-# Compilar
-javac -encoding UTF-8 -d out src/taller6/*.java
-
-# Ejecutar la interfaz gráfica
-java -cp out taller6.NotificationUI
-```
-
-Para ejecutar solo la demo por consola:
-
-```bash
-java -cp out taller6.NotificationDemoMain
-```
-
----
-
-## Interfaz
-
-- **Modo oscuro** (#1E1E1E) con acentos de color por estado (verde/rojo/azul).
-- **Formulario:** tipo (Urgent / Informational), canal (Email / SMS / Push), destinatario y mensaje.
-- **Tarjetas:** cada notificación enviada se muestra como una tarjeta con icono por estado, título, descripción, “hace X min” y botones *Cerrar* / *Ver detalles*.
